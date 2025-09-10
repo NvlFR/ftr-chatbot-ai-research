@@ -1,0 +1,78 @@
+hasil:
+
+ 1. Mengirim pesan ke Groq: "kemarin sore jajan seblak 15rb"
+--- HASIL JSON DARI GROQ ---
+{
+  intent: 'create_transaction',
+  type: 'expense',
+  amount: 15000,
+  description: 'jajan seblak',
+  category_suggestion: 'Makanan & Minuman',
+  date: '2025-09-09'
+}
+ 
+ 2. Mengirim pesan ke Groq: "dapet transferan dari ibu 250rb"
+--- HASIL JSON DARI GROQ ---
+{
+  intent: 'create_transaction',
+  type: 'income',
+  amount: 250000,
+  description: 'Transfer dari ibu',
+  category_suggestion: 'Lainnya',
+  date: '2025-09-10'
+}
+
+ 3. Mengirim pesan ke Groq: "bayar spotify buat bulan ini"
+--- HASIL JSON DARI GROQ ---
+{
+  intent: 'create_transaction',
+  type: 'expense',
+  amount: null,
+  description: 'Bayar Spotify bulan ini',
+  category_suggestion: 'Hiburan',
+  date: '2025-09-10'
+}
+
+ 4. Mengirim pesan ke Groq: "laporan pengeluaran minggu ini dong"
+--- HASIL JSON DARI GROQ ---
+{
+  intent: 'get_report',
+  type: null,
+  amount: null,
+  description: null,
+  category_suggestion: null,
+  date: null
+}
+ 
+ 5. Mengirim pesan ke Groq: "gajian 8jt"
+--- HASIL JSON DARI GROQ ---
+{
+  intent: 'create_transaction',
+  type: 'income',
+  amount: 8000000,
+  description: 'gajian',
+  category_suggestion: 'Gaji',
+  date: '2025-09-10'
+}
+
+ 6. Mengirim pesan ke Groq: "nasi padang pake rendang 25k"
+--- HASIL JSON DARI GROQ ---
+{
+  intent: 'create_transaction',
+  type: 'expense',
+  amount: 25000,
+  description: 'nasi padang rendang',
+  category_suggestion: 'Makanan & Minuman',
+  date: '2025-09-10'
+}
+
+7. Mengirim pesan ke Groq: "ngasih ade 2 lembar biru"
+--- HASIL JSON DARI GROQ ---
+{
+  intent: 'create_transaction',
+  type: 'expense',
+  amount: 400000,
+  description: 'ngasih ade 2 lembar biru',
+  category_suggestion: 'Lainnya',
+  date: '2025-09-10'
+}
